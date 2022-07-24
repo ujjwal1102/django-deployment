@@ -1,0 +1,35 @@
+*{
+    margin:0%;
+    padding: 0%;
+}
+.nav-link,
+.nav-item{
+    
+    padding-inline: 10px;
+    
+}
+
+.card-body a{
+    justify-content: end;
+
+}
+/* .card{
+   
+    margin:10px;
+
+} */
+
+.card:hover{
+    box-shadow: rgb(0, 0, 0);
+}
+
+
+.crousal-pos{
+    background-size: cover;
+}
+
+.carousel-caption{
+
+    color: black;
+      
+}

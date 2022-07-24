@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Calculater</title>
+    </head>
+    <body>
+        <form method = 'post'>
+            {% csrf_token %}
+            <div>
+                Num 1 :
+                <input type = "text" name = "num1" value = "{{val1}}">
+
+            </div>
+            <div>
+                <select name = 'opr' >
+
+                    <option value = '+'>+</option>
+                    <option value = '-'>-</option>
+                    <option value = '/'>/</option>
+                    <option value = '*'>*</option>
+
+                </select>
+            </div>
+            <div>
+                Num 2 :
+                <input type = "text" name = "num2" value = "{{val2}}">
+
+            </div>
+            <div>
+                <button>Calculate</button>
+
+            </div>
+            <div>
+                <input type = 'text' value = '{{output}}'>
+            </div>
+        </form>
+    </body>
+</html>

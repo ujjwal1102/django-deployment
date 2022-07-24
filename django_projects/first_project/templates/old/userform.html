@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="\static\css\userform.css">
+        <title>
+            Form
+        </title>
+    </head>
+    
+    <body>
+        <div align = "center">
+            <form class = "form" method = 'post'>
+                {% csrf_token %}
+                {{form}}
+                <!-- <div>
+                    Num 1 : 
+                    <input type = "text" name = "num1" value = "{{n1}}" class =  "num">
+                </div>
+                <div>
+                    Num 2 : 
+                    <input type = "text" name = "num2" value = "{{n2}}" class =  "num">
+                </div>
+                <div> -->
+                    <button type="submit" class = "btn">
+                        Submit
+                    </button>
+
+                </div>
+                <div>
+                    
+                    <input type = "text" name="output" value = "{{output}}"/>
+
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

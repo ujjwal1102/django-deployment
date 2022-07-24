@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+    <!--{% include "header.html"%}-->
+    {% extends "base.html" %}
+    {% block content %}
+    <head>
+        <title>{{title}}</title>
+        <style type = "text/css">        h1{
+            color : #1916b493;
+            background-color : hsl(93, 72%, 70%);
+        }
+        </style>
+       
+        <h1 align = "center"> INTRODUCTION </h1 >
+
+    </head>
+    <hr>
+    <body>
+        <h2 align = "center" > <cite> I am Ujjwal Srivastava </cite></h2>
+        
+        <h4>
+            <strong>
+                <p align = "center" > I"m Persuing BCA Right Now</p>
+            </strong>
+        </h4>  
+        <address>
+            <p align = "center" >
+                
+                    <abbr title = " Bollywood songs">Singing</abbr>  is my Passion,<br> I also play guitar </p>
+                
+            </address>
+
+        <header>
+            
+            <!--<div class =  "main">{{bdata}}</div>-->
+            {% for i in details %}
+            <tr>
+                <th>
+                    <div class =  "main">{{forloop.revcounter0}}{{i}}</div> 
+                </th>
+            </tr>
+               
+            
+            {% endfor %}
+
+
+            {% for i in num %}
+                {% if i > 20 %}
+                    <div class = "main">{{i}}</div>
+                {% endif %}
+                
+                
+            {% endfor %}
+        </header>
+        
+        <!--{% include "header.html"%}-->
+
+        {% endblock %}
+
+    </body>
+
+</html>

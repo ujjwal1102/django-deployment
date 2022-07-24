@@ -1,0 +1,28 @@
+*{
+    margin:0%;
+    padding: 0%;
+}
+
+header{
+
+    width:100%;
+    position:fixed;
+    position: absolute;
+    
+    z-index: 100;
+    
+    background-color: rgba(214, 189, 233, 0.186);
+    
+}
+
+.btn{
+    color: rgb(24, 17, 100);
+    border: 1px solid rgb(24, 17, 100);
+
+}
+.btn:hover{
+
+    color: black;
+    background-color: rgb(182, 182, 182);
+
+}
